@@ -11,14 +11,37 @@ body {
 	height: 100vh;
 }*/
 
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.blocotexto a {
+	text-decoration: underline;
+	color: grey;
+}
+
+.blocotexto a:hover {
+	text-decoration: none;
+}
+
+.texto a {
+	color: red;
+}
+
 .topo {
 	/*margin: 5px;*/
 	font-family: 'DM Mono', monospace;
 	margin-top: 0px;
-	border: 5px solid black;
-	height: 100vh;
+	/*border: 5px solid black;*/
+	/*height: 100vh;*/
 	width: 100%;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	font-size: 2em;
 	text-transform: uppercase;
 }
@@ -66,7 +89,7 @@ body {
 	align-items: flex-end;
 }
 
-li {
+.menu li {
 	padding: 0 0 0 20px;
 }
 
@@ -77,6 +100,7 @@ li {
 	align-items: flex-start;
 	justify-content: flex-start;
 	z-index: 100;
+	height: 5px;
 }
 
 .logo {
@@ -90,6 +114,9 @@ li {
 	right: 0;
 	bottom: 0;
 	z-index: -100;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
 }
 
 .imagemfloat {
@@ -100,7 +127,7 @@ li {
 
 .container {
 	padding-top: 250px;
-	margin: 5px;
+	margin: 0;
 /*	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -113,6 +140,26 @@ li {
 	color: #ffffff;
 	font-size: 6em;
 	line-height: 115%;
+	hyphens: manual;
+	-webkit-hyphens: manual;
+  	-ms-hyphens: manual;
+
+
+}
+
+.vartextao {
+	font-family: 'DM Mono', monospace;
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 6em;
+	line-height: 115%;
+	hyphens: manual;
+	-webkit-hyphens: manual;
+  	-ms-hyphens: manual;
+  	text-align: center;
+  	text-transform: uppercase;
+
+ 
 }
 
 .blocotexto {
@@ -132,12 +179,15 @@ li {
 .titulo {
 	text-align: left;
 	width: 100%;
-	font-family: 'Volkhov', serif;
-	color: #000000;
+	font-family: 'DM Mono', monospace;
+	color: #ffffff;
 	font-weight: 700;
-	font-size: 3em;
+	font-size: 4em;
 	line-height: 110%;
 	z-index: 50;
+	text-transform: uppercase;
+	text-shadow: 4px 4px #000000;
+
 }
 
 .vartitulo {
@@ -155,16 +205,43 @@ li {
 }
 
 .texto {
-	background-color: #ffffff;
-	border-top: 0px solid #ffffff;
+	background-color: #000000;
+	color: #ffffff;
+	border-top: 10px solid #000000;
 	position: relative;
-	top: -20px;
+	top: -30px;
 	padding:40px;
 	font-family: 'DM Mono', monospace;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	line-height: 120%;
 
 
+}
+
+.textotitulo {
+	font-weight: 700;
+	/*text-decoration: underline;*/
+}
+
+.textotitulo a {
+
+
+}
+
+.quote {
+	margin: 50px;
+	color: grey;
+	font-style: italic;
+}
+
+dt {
+	font-weight: 700;
+	text-decoration: underline;
+	margin-top: 0.7em
+}
+
+dd {
+	margin-left: 45px;
 }
 
 .imagemcorpo {
@@ -172,7 +249,11 @@ li {
  height: auto;
 }
 
-
+hr {
+	margin-top: 2em;
+	margin-bottom: 1em;
+	border: 1px solid white;
+}
 
 
 
@@ -181,6 +262,10 @@ li {
 	/*and (orientation: portrait) */{
 		.textao{
 			font-size: 9vw;
+		}
+
+		.texto {
+			font-size: 1.8em;
 		}
 
 }
@@ -195,16 +280,16 @@ li {
 
 @media only screen and (max-width: 1100px)
 		/*and (orientation: portrait)*/{
-		li {
-			padding: 0 0 0 2px;
+		.menu li {
+			padding: 0;
 		}
 		.topo {
-			font-size: 4.4vw;
+			font-size: 4vw;
 			letter-spacing: -0.5px;
 
 		}
 		.navbar {
-	padding: 10px 15px 0 10px; }
+	padding: 10px 10px 0 10px; }
 		.menu {
 			justify-content: space-between;
 		}
