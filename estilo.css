@@ -179,6 +179,16 @@ a:hover {
 	z-index: 50;
 }
 
+.painel {
+	margin: 20px 20px 10px 20px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 50;
+
+}
+
 .dentro {
 	max-width: 700px;
 	align-self: center;
@@ -228,7 +238,12 @@ a:hover {
 
 .textotitulo {
 	font-weight: 700;
-	/*text-decoration: underline;*/
+	color: red;
+	text-decoration: underline;
+}
+
+.textotitulo:hover {
+	text-decoration: none;
 }
 
 .textotitulo a {
@@ -248,8 +263,12 @@ dt {
 	margin-top: 0.7em
 }
 
+dt:hover {
+	text-decoration: none;
+}
+
 dd {
-	margin-left: 45px;
+	margin-left: 48px;
 }
 
 .imagemcorpo {
