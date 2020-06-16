@@ -12,12 +12,12 @@ body {
 }*/
 
 a {
-	color: #000000;
-	text-decoration: underline;
+	color: #00ff99;
+	text-decoration: none;
 }
 
 a:hover {
-	color: #ffffff;
+	/*color: #ffffff;*/
 	text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ html {
 }
 
 .texto a {
-	color: red;
+	color: #00ff99;
 }
 
 .texto a:hover {
@@ -63,13 +63,7 @@ html {
 	font-weight: 500;
 }
 
-.apoie {
-	font-weight: 500;
-}
 
-.apoie a:hover {
-	font-style: italic;
-}
 
 .grudento {
 	position: fixed;
@@ -99,6 +93,20 @@ html {
 
 .menu li {
 	padding: 0 0 0 20px;
+}
+.apoie {
+	font-weight: 500;
+	background-color: #000000;
+	color: #ffffff;
+	border-right: 20px solid black;
+}
+
+.apoie a {
+	color: #ffffff;
+}
+
+.apoie a:hover {
+	font-style: italic;
 }
 
 .caixalogo {
@@ -155,7 +163,7 @@ html {
 	font-weight: 700;
 	color: #ffffff;
 	font-size: 4em;
-	line-height: 120%;
+	line-height: 127%;
 	hyphens: manual;
 	-webkit-hyphens: manual;
   	-ms-hyphens: manual;
@@ -168,7 +176,9 @@ html {
 	color: #000000;
 	text-decoration: none;
 	/*text-shadow: 4px 4px #ffffff;*/
-	/*background-color: rgba(200,200,200,0.5);*/
+	background-color: #c8c8c8;
+/*	opacity: 0.6;*/
+	/*line-height: 150%;*/
 }
 
 .textao a:hover {
@@ -181,15 +191,29 @@ html {
 	font-family: 'DM Mono', monospace;
 	font-weight: 700;
 	color: #ffffff;
-	font-size: 6em;
+	font-size: 4vw;
 	line-height: 115%;
 	hyphens: manual;
 	-webkit-hyphens: manual;
   	-ms-hyphens: manual;
   	text-align: center;
   	text-transform: uppercase;
+  	margin: 50px;
 
  
+}
+
+.botao {
+	background-color: #000000;
+	box-shadow: 5px 5px #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.botao:hover {
+	background-color: #ffffff;
+	box-shadow: 5px 5px #000000;
+
 }
 
 .blocotexto {
@@ -200,6 +224,17 @@ html {
 	flex-direction: column;
 	flex-wrap: wrap;
 	z-index: 50;
+}
+
+.blocoimagem {
+	/*padding-top: 50px;*/
+	margin: 10px 20px 10px 20px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+	z-index: 50;
+
 }
 
 /*.painel {
@@ -241,8 +276,12 @@ height: 100%;
 	line-height: 110%;
 	z-index: 50;
 	text-transform: uppercase;
-	text-shadow: 4px 4px #000000;
+	/*text-shadow: 4px 4px #000000;*/
 
+}
+
+.titulo span {
+	background-color: black;
 }
 
 .vartitulo {
@@ -264,7 +303,7 @@ height: 100%;
 	color: #ffffff;
 	border-top: 10px solid #000000;
 	position: relative;
-	top: -30px;
+	top: -20px;
 	padding:40px;
 	font-family: 'DM Mono', monospace;
 	font-size: 1.5em;
@@ -277,7 +316,7 @@ height: 100%;
 
 .textotitulo {
 	font-weight: 700;
-	color: red;
+	color: #00ff99;
 	text-decoration: underline;
 }
 
@@ -298,13 +337,22 @@ height: 100%;
 
 dt {
 	font-weight: 700;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	margin-top: 0.7em
+	/*background-color: white;*/
+	/*color: red;*/
 }
 
-dt:hover {
-	text-decoration: none;
+.fundobranco {
+	background-color: #ffffff;
+	color: #000000;
+	padding-left: 2px;
+	padding-right: 2px;
 }
+
+/*dt:hover {
+	text-decoration: none;
+}*/
 
 dd {
 	margin-left: 48px;
@@ -353,6 +401,10 @@ hr {
 		.menu li {
 			padding: 0;
 		}
+
+		.apoie {
+			border-left: 20px solid black;
+		}
 		.topo {
 			font-size: 4vw;
 			letter-spacing: -0.5px;
@@ -370,5 +422,9 @@ hr {
 	.caixalogo {
 		border-top: 3px solid black;
 	}
+
+.vartextao {
+	font-size: 7vw;
+}
 
 }
